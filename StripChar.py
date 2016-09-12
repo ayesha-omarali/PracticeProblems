@@ -1,5 +1,6 @@
 '''
 GOAL: Given a string, return the same string with all duplicate characters removed
+Solutions are provided for using and not using importss
 '''
 
 import collections
@@ -15,6 +16,16 @@ class STRIPCHAR(object):
         for c in self.chars:
             self.dic[c] += 1
         cleaned = {key: value for key, value in self.dic.items() if value is not 1}
+
+        # #FOR NOT USING IMPORTS:
+        # dic = {}
+        # for c in self.chars:
+        #     if c in dic.keys():
+        #         dic[c] += 1
+        #     else:
+        #         dic[c] = 1
+        # cleaned = {key: value for key, value in dic.items() if value is not 1}
+
         for key in cleaned.keys():
             self.INPUT = self.INPUT.replace(key, '')
             self.INPUT = self.INPUT.replace(key.upper(), '')
