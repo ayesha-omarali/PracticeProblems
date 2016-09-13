@@ -1,5 +1,5 @@
 def merge(right, left):
-    i, j, k = 0, 0, 0
+    i, j, = 0, 0
     answer = []
     while i < len(right) and j < len(left):
         if right[i] < left[j]:
