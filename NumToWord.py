@@ -14,6 +14,10 @@ class NUMTOWORD(object):
         self.num = num
 
     def num_to_word(self):
+        result = ''
+        million = False
+        thousand = False
+        hundred = False
         length = len(self.num)
         if length == 1:
             return ones[self.num]
@@ -88,6 +92,17 @@ def main():
     print OUTPUT
     if ANS == OUTPUT:
         print '** SUCCESS! **'
+    ANS = 'one hundred and forty-two'
+    OUTPUT = NUMTOWORD('142').num_to_word()
+    print OUTPUT
+    if ANS == OUTPUT:
+        print '** SUCCESS! **'
+    ANS = 'nineteen'
+    OUTPUT = NUMTOWORD('19').num_to_word()
+    print OUTPUT
+    if ANS == OUTPUT:
+        print '** SUCCESS! **'
+
 
 
 
