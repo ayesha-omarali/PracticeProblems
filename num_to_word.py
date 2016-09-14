@@ -9,7 +9,7 @@ tens = {'10': 'ten', '11': 'eleven', '12': 'twelve', '13': 'thirteen', '14': 'fo
 supers = {'2': 'twenty', '3': 'thirty', '4': 'forty', '5': 'fifty', '6': 'sixty', '7': 'seventy', '8': 'eighty', '9': 'ninety'}
 
 
-class NUMTOWORD(object):
+class NumToWord(object):
     def __init__(self, num):
         self.num = num
 

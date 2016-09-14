@@ -5,7 +5,7 @@ Solutions are provided for using and not using importss
 
 import collections
 
-class STRIPCHAR(object):
+class StripChar(object):
 
     def __init__(self, INPUT):
         self.INPUT = INPUT
