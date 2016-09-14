@@ -6,8 +6,7 @@ The wall varaible is an invisible wall, which prevents the necessity of creating
     and then "move" the wall by increasing its index.
 The pivot variable is a random number used to compare; I grabbed the last item of the array to start off with, then used the item on the right side
     of my invisible wall.
-    This is a good and bad thing -- as the pivot could possibly be a
-    highest or lowest value in the array, leading to the worst case runtime of O(n^2); however on average this
+    This is a good and bad thing -- as the pivot could possibly be a highest or lowest value in the array, leading to the worst case runtime of O(n^2); however on average this
     comparison yields a O(nlogn) runtime -- n for the total comparisons of array of length n, and logn for the number
     of times we divide the list with the invisible wall.
 
