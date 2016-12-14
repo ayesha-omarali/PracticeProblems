@@ -6,7 +6,7 @@ O(1) complexity & O(logn) performance
 def binarysearch(array, value):
     '''
     0 9  #print low, high
-    5 9  #each time binaryrecursive is called
+    5 9  #each time binarysearch is called
     5 6  #this demonstrates how binary search works!
     6 6
     6
